@@ -7,9 +7,10 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -22,4 +23,109 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.15s;
+  cursor: zoom-in;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04444, 1.04);
+}
+
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.hidden-scroll .sl-wrapper .sl-close {
+  color: #fff;
+}
+
+.hidden-scroll .sl-wrapper .sl-counter {
+  color: #fff;
+}
+
+.sl-wrapper .sl-navigation .sl-next,
+.sl-wrapper .sl-navigation .sl-prev {
+  color: #fff;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+
+.feedback-form label input {
+  height: 40px;
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-family: Montserrat;
+  font-size: 16px;
+  transition: border 250ms;
+  outline: none;
+}
+
+.feedback-form label input:hover {
+  border: 1px solid #000;
+}
+
+.feedback-form label textarea {
+  height: 80px;
+  resize: none;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: Montserrat;
+  font-size: 16px;
+  transition: border 250ms;
+  outline: none;
+}
+
+.feedback-form label textarea:hover {
+  border: 1px solid #000;
+}
+
+.feedback-form button {
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
 }
